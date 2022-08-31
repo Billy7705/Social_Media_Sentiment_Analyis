@@ -5,6 +5,7 @@ In this project we set out to determine if social media sentiment of a controver
 # Data
 
 We gathered data from three separate sources:
+
 ● Twitter: Using the snscrape library, we scraped 80 Mb worth of data, amounting to over 400,000 tweets posted in the last 500 days.
 
 ● Reddit: Using the reddit API, we scraped 15 Mb worth of data, gathering posts made in the last 500 days.
@@ -16,6 +17,7 @@ We gathered data from three separate sources:
 # Preprocessing
 
 Using Spark, we did following preprocessing operations:
+
 ● Unioned twitter and reddit spark dataframes, joined on date.
 
 ● Added Youtube viewership data as a column, joined on date.
@@ -30,6 +32,6 @@ Using Spark, we did following preprocessing operations:
  
  # Modelling:
  
- We then ran our data through three different models (Linear Regression, Random Forest, XGBoost) with viewership as a target variable. We determined some features to be significant, and concluded that social media sentiment is positively associated with an artist's viewiership numbers.
+We then ran our data through three different models (Linear Regression, Random Forest, XGBoost) with viewership as a target variable. We determined some features to be significant, and concluded that social media sentiment is positively associated with an artist's viewiership numbers.
  
  Thank you to my partners Anthony Wang and Lawrence Lin for working on this project with me.
